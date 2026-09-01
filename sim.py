@@ -83,8 +83,6 @@ while n < len(t_hist):
 
     clock.tick(fps)
 
-    n = int(i * (1/fps) / eps * speed)
-
     x1 = l * np.sin(a_hist[n])
     y1 = l * np.cos(a_hist[n])
 
@@ -115,5 +113,6 @@ while n < len(t_hist):
     window.fill((0, 0, 0))
 
     i += 1
+    n = int(i * (1/fps) / eps * speed)
 
     
